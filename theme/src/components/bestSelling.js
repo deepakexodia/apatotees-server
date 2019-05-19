@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Fragment } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const BestSelling = props => (
 	<Fragment>
@@ -16,7 +17,7 @@ const BestSelling = props => (
 							key={key}
 							className="column is-6-mobile is-4-tablet is-3-desktop is-3-widescreen is-3-fullhd available"
 						>
-							<a className="zoom-anchor" href={obj.href}>
+							<NavLink className="zoom-anchor" to={obj.href}>
 								{/* <a href={obj.href} onMouseOver={(e)=>{imageZoom(e)}}> */}
 								<figure className="image">
 									<img
@@ -40,7 +41,7 @@ const BestSelling = props => (
 										</div>
 									</h5>
 								</div>
-							</a>
+							</NavLink>
 						</div>
 					))}
 				</div>

@@ -14,37 +14,36 @@ const IndexContainer = props => {
 		state: { pageDetails, settings }
 	} = props;
 
-	const data1 = null;
-	// const data1 = [
-	// 	{
-	// 		href: '/trainers/demo-mens-7-running-shoes',
-	// 		src:
-	// 			'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1558273686/Naruto_Jiraya_Half_Sleeve-Black_1024x1024.png',
-	// 		name: 'Naruto shirt for men',
-	// 		price: '$200'
-	// 	},
-	// 	{
-	// 		href: '/trainers/demo-mens-7-running-shoes',
-	// 		src:
-	// 			'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1557658382/Roronoa_Zoro_Half_Sleeve-_White_300x.png',
-	// 		name: 'demo',
-	// 		price: '$200'
-	// 	},
-	// 	{
-	// 		href: '/trainers/demo-mens-7-running-shoes',
-	// 		src:
-	// 			'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1557658382/Kame_Symbol_Half_Sleeve-_Red_300x.png',
-	// 		name: 'demo',
-	// 		price: '$200'
-	// 	},
-	// 	{
-	// 		href: '/trainers/demo-mens-7-running-shoes',
-	// 		src:
-	// 			'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1558273747/It_s_An_Anime_Things_Half_Sleeve-Navy_Blue_300x.png',
-	// 		name: 'demo',
-	// 		price: '$200'
-	// 	}
-	// ];
+	const data1 = [
+		{
+			href: '/trainers/demo-mens-7-running-shoes',
+			src:
+				'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1558273686/Naruto_Jiraya_Half_Sleeve-Black_1024x1024',
+			name: 'Naruto shirt for men',
+			price: '$200'
+		},
+		{
+			href: '/trainers/demo-mens-7-running-shoes',
+			src:
+				'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1557658382/Roronoa_Zoro_Half_Sleeve-_White_300x.png',
+			name: 'demo',
+			price: '$200'
+		},
+		{
+			href: '/trainers/demo-mens-7-running-shoes',
+			src:
+				'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1557658382/Kame_Symbol_Half_Sleeve-_Red_300x.png',
+			name: 'demo',
+			price: '$200'
+		},
+		{
+			href: '/trainers/demo-mens-7-running-shoes',
+			src:
+				'https://res.cloudinary.com/dmjvm8vzc/image/upload/v1558273747/It_s_An_Anime_Things_Half_Sleeve-Navy_Blue_300x.png',
+			name: 'demo',
+			price: '$200'
+		}
+	];
 
 
 	const data2 = [
