@@ -7,7 +7,7 @@
 // const dbCred =
 // 	dbUser.length > 0 || dbPass.length > 0 ? `${dbUser}:${dbPass}@` : '';
 
-// const dbUrl = 
+// const dbUrl =
 // 	process.env.DB_URL || `mongodb://${dbCred}${dbHost}:${dbPort}/${dbName}`;
 const dbUrl =
 	process.env.DB_URL ||
@@ -28,8 +28,8 @@ module.exports = {
 	// used by API
 	adminLoginUrl: '/admin/login',
 
-	apiListenPort: 3001,
-	storeListenPort: 3000,
+	apiListenPort: process.env.PORT || 3000,
+	storeListenPort: process.env.PORT || 3001,
 
 	// used by API
 	mongodbServerUrl: dbUrl,
