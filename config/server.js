@@ -16,16 +16,16 @@ const dbUrl =
 	'mongodb://shashank:g9971441252@ds155606.mlab.com:55606/apatotees';
 
 module.exports = {
-	apiListenPort: process.env.PORT || 3000,
-	storeListenPort: process.env.PORT || 3001,
+	apiListenPort: process.env.PORT || 3001,
+	storeListenPort: process.env.PORT || 3000,
 	// used by Store (server side)
-	apiBaseUrl: `localhost:${process.env.PORT || 3001}/api/v1`,
+	apiBaseUrl: `http://localhost:${process.env.PORT || 3001}/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `localhost:${process.env.PORT || 3001}/ajax`,
+	ajaxBaseUrl: `http://localhost:${process.env.PORT || 3001}/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `localhost:${process.env.PORT || 3000}`,
+	storeBaseUrl: `http://localhost:${process.env.PORT || 3000}`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',
