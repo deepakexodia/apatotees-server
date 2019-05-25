@@ -15,17 +15,19 @@ const dbUrl =
 	// 'mongodb://shashank:g9971441252@ds155396.mlab.com:55396/tobaniware';
 	'mongodb://shashank:g9971441252@ds155606.mlab.com:55606/apatotees';
 
+const domain = 'apatotees.herokuapp.com';
+
 module.exports = {
 	apiListenPort: process.env.PORT || 3001,
 	storeListenPort: process.env.PORT || 3000,
 	// used by Store (server side)
-	apiBaseUrl: `localhost:${process.env.PORT || 3001}/api/v1`,
+	apiBaseUrl: `${domain}:${process.env.PORT || 3001}/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `localhost:${process.env.PORT || 3001}/ajax`,
+	ajaxBaseUrl: `${domain}:${process.env.PORT || 3001}/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `localhost:${process.env.PORT || 3000}`,
+	storeBaseUrl: `${domain}:${process.env.PORT || 3000}`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',
