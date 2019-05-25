@@ -19,7 +19,7 @@ const domain = process.env.URL || 'apatotees.herokuapp.com';
 
 module.exports = {
 	apiListenPort: process.env.API_PORT || 3001,
-	storeListenPort: process.env.STORE_PORT || 3000,
+	storeListenPort: process.env.PORT || 3000,
 	// used by Store (server side)
 	apiBaseUrl: `${domain}:${process.env.API_PORT || 3001}/api/v1`,
 
@@ -27,7 +27,7 @@ module.exports = {
 	ajaxBaseUrl: `${domain}:${process.env.API_PORT || 3001}/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `${domain}:${process.env.STORE_PORT || 3000}`,
+	storeBaseUrl: `${domain}:${process.env.PORT || 3000}`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',
