@@ -18,16 +18,16 @@ const dbUrl =
 const domain = process.env.URL || 'localhost';
 
 module.exports = {
-	apiListenPort: process.env.API_PORT || 3001,
-	storeListenPort: process.env.PORT || 3000,
+	apiListenPort: process.env.PORT || 3001,
+	storeListenPort: process.env.STORE_PORT || 3000,
 	// used by Store (server side)
-	apiBaseUrl: `http://${domain}:${process.env.API_PORT || 3001}/api/v1`,
+	apiBaseUrl: `http://${domain}:${process.env.PORT || 3001}/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `http://${domain}:${process.env.API_PORT || 3001}/ajax`,
+	ajaxBaseUrl: `http://${domain}:${process.env.PORT || 3001}/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `http://${domain}:${process.env.PORT || 3000}`,
+	storeBaseUrl: `http://${domain}:${process.env.STORE_PORT || 3000}`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',

@@ -3,5 +3,5 @@ const domain = process.env.URL || 'localhost';
 module.exports = {
 	// store UI language
 	language: 'en',
-	ajaxBaseUrl: `http://${domain}:${process.env.API_PORT || 3001}/ajax`
+	ajaxBaseUrl: `http://${domain}:${process.env.PORT || 3001}/ajax`
 };
