@@ -19,13 +19,13 @@ module.exports = {
 	apiListenPort: process.env.PORT || 3001,
 	storeListenPort: process.env.PORT || 3000,
 	// used by Store (server side)
-	apiBaseUrl: `https://localhost:${process.env.PORT || 3001}/api/v1`,
+	apiBaseUrl: `localhost:${process.env.PORT || 3001}/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `https://localhost:${process.env.PORT || 3001}/ajax`,
+	ajaxBaseUrl: `localhost:${process.env.PORT || 3001}/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `https://localhost:${process.env.PORT || 3000}`,
+	storeBaseUrl: `localhost:${process.env.PORT || 3000}`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',
