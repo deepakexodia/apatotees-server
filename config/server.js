@@ -15,7 +15,7 @@ const dbUrl =
 	// 'mongodb://shashank:g9971441252@ds155396.mlab.com:55396/tobaniware';
 	'mongodb://shashank:g9971441252@ds155606.mlab.com:55606/apatotees';
 
-const domain = 'http://apatotees.herokuapp.com';
+const domain = process.env.URL || 'apatotees.herokuapp.com';
 
 module.exports = {
 	apiListenPort: process.env.PORT || 3001,
