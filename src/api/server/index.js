@@ -23,6 +23,7 @@ app.all('*', (req, res, next) => {
 		// security.getAccessControlAllowOrigin()
 		req.header('Origin')
 	);
+	res.header('Vary', 'Origin');
 	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
 	res.header('Access-Control-Allow-Credentials', 'true');
 	res.header(
