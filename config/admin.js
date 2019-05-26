@@ -4,6 +4,6 @@ module.exports = {
 	// dashboard UI language
 	language: 'en',
 	apiBaseUrl: `https://${serverUrl}/api/v1`,
-	apiWebSocketUrl: `ws://${serverUrl}`,
+	apiWebSocketUrl: `wss://${serverUrl}`,
 	developerMode: true
 };
