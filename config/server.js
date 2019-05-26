@@ -28,7 +28,7 @@ module.exports = {
 	ajaxBaseUrl: `https://${serverUrl}/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `https://${clientUrl}`,
+	storeBaseUrl: '*',
 
 	// used by API
 	adminLoginUrl: '/admin/login',
