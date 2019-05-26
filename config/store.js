@@ -3,5 +3,5 @@ const serverUrl = process.env.SERVERURL || 'localhost:3001';
 module.exports = {
 	// store UI language
 	language: 'en',
-	ajaxBaseUrl: `http://${serverUrl}/ajax`
+	ajaxBaseUrl: `https://${serverUrl}/ajax`
 };

@@ -3,7 +3,7 @@ const serverUrl = process.env.SERVERURL || 'localhost:3001';
 module.exports = {
 	// dashboard UI language
 	language: 'en',
-	apiBaseUrl: `http://${serverUrl}/api/v1`,
+	apiBaseUrl: `https://${serverUrl}/api/v1`,
 	apiWebSocketUrl: `ws://${serverUrl}`,
 	developerMode: true
 };
