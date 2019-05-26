@@ -20,7 +20,7 @@ const clientUrl = process.env.CLIENTURL || 'localhost:3000';
 
 module.exports = {
 	apiListenPort: process.env.PORT || 3001,
-	storeListenPort: process.env.STORE_PORT || 3000,
+	storeListenPort: process.env.PORT || 3000,
 	// used by Store (server side)
 	apiBaseUrl: `http://${serverUrl}/api/v1`,
 
