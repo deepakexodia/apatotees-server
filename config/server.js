@@ -15,19 +15,20 @@ const dbUrl =
 	// 'mongodb://shashank:g9971441252@ds155396.mlab.com:55396/tobaniware';
 	'mongodb://shashank:g9971441252@ds155606.mlab.com:55606/apatotees';
 
-const domain = process.env.URL || 'localhost';
+const serverUrl = process.env.SERVERURL || 'localhost:3001';
+const clientUrl = process.env.CLIENTURL || 'localhost:3000';
 
 module.exports = {
 	apiListenPort: process.env.PORT || 3001,
 	storeListenPort: process.env.STORE_PORT || 3000,
 	// used by Store (server side)
-	apiBaseUrl: `http://${domain}:${process.env.PORT || 3001}/api/v1`,
+	apiBaseUrl: `http://${serverUrl}/api/v1`,
 
 	// used by Store (server and client side)
-	ajaxBaseUrl: `http://${domain}:${process.env.PORT || 3001}/ajax`,
+	ajaxBaseUrl: `http://${serverUrl}/ajax`,
 
 	// Access-Control-Allow-Origin
-	storeBaseUrl: `http://${domain}:${process.env.STORE_PORT || 3000}`,
+	storeBaseUrl: `http://${clientUrl}`,
 
 	// used by API
 	adminLoginUrl: '/admin/login',

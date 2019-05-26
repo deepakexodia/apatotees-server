@@ -1,7 +1,7 @@
-const domain = process.env.URL || 'localhost';
+const serverUrl = process.env.SERVERURL || 'localhost:3001';
 // config used by store client side only
 module.exports = {
 	// store UI language
 	language: 'en',
-	ajaxBaseUrl: `http://${domain}:${process.env.PORT || 3001}/ajax`
+	ajaxBaseUrl: `http://${serverUrl}/ajax`
 };

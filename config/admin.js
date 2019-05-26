@@ -1,9 +1,9 @@
-const domain = process.env.URL || 'localhost';
+const serverUrl = process.env.SERVERURL || 'localhost:3001';
 // config used by dashboard client side only
 module.exports = {
 	// dashboard UI language
 	language: 'en',
-	apiBaseUrl: `http://${domain}:${process.env.PORT || 3001}/api/v1`,
-	apiWebSocketUrl: `ws://${domain}:${process.env.PORT || 3001}`,
+	apiBaseUrl: `http://${serverUrl}/api/v1`,
+	apiWebSocketUrl: `ws://${serverUrl}`,
 	developerMode: true
 };
